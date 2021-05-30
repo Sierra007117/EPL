@@ -1,0 +1,58 @@
+Var1 is a zombie
+summon
+	remember 6
+bind
+Var2 is a zombie
+summon
+	remember 2
+bind
+Var3 is a zombie
+summon
+	remember 1
+bind
+Var4 is a zombie
+summon
+	remember 2
+bind
+Temp is a zombie
+summon
+	remember 0
+bind
+Neg is a zombie
+summon
+	remember -1
+bind
+Clippit is a vampire
+summon
+	task t1
+		remember Var3 moan Var4 moan Var3
+		say moan Var3
+		say "||did task 1\n"
+	animate
+	task t2
+		remember Var2 rend moan Var2 moan Var1
+		say moan Var2
+		say "||did task 2\n"
+	animate
+	task t3
+		remember Temp moan Var2
+		shamble
+			remember Var3 moan Var3 moan Neg
+			say "Var3: "
+			say moan Var3
+			say "\n"
+			say "Var2: "
+			say moan Var2
+			say "\n"
+			remember Var2 moan Var2 moan Temp
+		until remembering Var3 1
+		
+		say "did task 3\n"
+	animate
+	task t
+		say "\nThe result is: "
+		say moan Var2
+		banish
+	animate
+	
+bind

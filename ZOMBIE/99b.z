@@ -1,0 +1,56 @@
+Bottles is a zombie
+summon
+	remember 1
+bind
+
+Hubert is a demon
+summon
+	task addBottles
+		remember Bottles moan Bottles 1
+	animate
+	task addBottles2
+		remember Bottles moan Bottles 2
+	animate
+	task addBottles3
+		remember Bottles moan Bottles 4
+	animate
+bind
+Clippit is a ghost
+summon
+	remember -1
+	task Task1
+		shamble
+			say moan Bottles
+			say " bottles of beer on the wall,\n"
+			say moan Bottles
+			say " bottles of beer!\n"
+			say "Take one down,\n"
+			say "pass it around,\n"
+			
+			remember Bottles moan Bottles moan Clippit
+			
+			say moan Bottles
+			say " bottles of beer on the wall!\n"
+			say "\n"
+		until remembering Bottles 2
+			
+		say moan Bottles
+		say " bottles of beer on the wall,\n"
+		say moan Bottles
+		say " bottles of beer!\n"
+		say "Take one down,\n"
+		say "pass it around,\n"
+		
+		remember Bottles moan Bottles moan Clippit
+		
+		say moan Bottles
+		say " bottle of beer on the wall!\n"
+		say "\n"
+		
+		say "1 bottle of beer on the wall,\n"
+		say "1 bottle of beer!\n"
+		say "Take it down,\n"
+		say "pass it around,\n"
+		say "no more bottles of beer on the wall!\n"
+	animate
+disturb

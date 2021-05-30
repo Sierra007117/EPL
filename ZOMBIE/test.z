@@ -1,0 +1,12 @@
+Clippit is a demon
+summon
+	task Task1
+		say "Milk\n"
+	animate
+	task Task2
+		say "Eggs\n"
+	animate
+	task Task3
+		say "Cheese\n"
+	animate
+bind

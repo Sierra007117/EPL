@@ -1,0 +1,19 @@
+Genie is a djinn
+summon
+	remember 0
+	task r1
+		remember 1
+	animate
+	task r0
+		remember 0
+	animate
+bind
+
+Clippit is a ghost
+summon
+	task t1
+		shamble
+			say moan Genie
+		until remembering Genie 0
+	animate
+disturb

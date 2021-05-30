@@ -1,0 +1,22 @@
+This is an interpreter based on the zombie programming language!
+http://www.dangermouse.net/esoteric/zombie.html
+
+Differences between my interpreter and the specification
+---
+-"animate" and "disturb" can no longer be used to activate entities from 
+inside of other entities. Those commands also function as block endings, so
+ it would be like naming a Java method "}". "Invoke" is used in place of 
+these.
+
+-Expressions are read from left to right, but I attempted to make it 
+compatable with right-to-left reading zombie interpreters. If this 
+seriously bothers you or causes massive problems with your code, I have 
+included the source code with this so you can change it.
+
+-"Invoke" simply starts whatever entity it is being used on. In the 
+original specification, it creates a copy of the entity with the exact same
+ name, which would only lead to confusion.
+
+-Entities can no longer perform several tasks at once.
+
+-There's probably more that I couldn't think of off the top of my head.
